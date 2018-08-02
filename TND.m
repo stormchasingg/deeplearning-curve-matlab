@@ -16,10 +16,10 @@ y = (1/2) * norm / (Fnormb - Fnorma);
 % Draw curve
 figure('Position', [50,50,600,500], 'Name', 'Truncated Normal Dustribution',...
     'Color', [1,1,1]);
-plot(x, y,'b--', 'LineWidth', 2)
+plot(x, y,'b--', 'LineWidth', 1)
 % Setting 
 set(gca, 'FontSize', 10, 'TickDir', 'out', 'TickLength', [0.01,0.01])
-xlabel('x', 'FontSize', 15);ylabel('probability density', 'FontSize', 15)
+xlabel('x', 'FontSize', 12);ylabel('probability density', 'FontSize', 12)
 hold on
 %% second curve
 miu1 = -8;
@@ -30,4 +30,4 @@ Fnorma1 = (1/2) * (1 + erf((1/sigma1)*(a-miu1)/sqrt(2)));
 Fnormb1 = (1/2) * (1 + erf((1/sigma1)*(b-miu1)/sqrt(2)));
 y1 = (1/2) * norm1 / (Fnormb1 - Fnorma1);
 
-plot(x, y1,'k-', 'LineWidth', 2)
+plot(x, y1,'k-', 'LineWidth', 1)
